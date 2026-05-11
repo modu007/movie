@@ -1,17 +1,44 @@
 # movie
+# Movie Commons - Flutter Developer Assignment
 
-A new Flutter project.
+## ✨ Key Features
 
-## Getting Started
+- Fully **Offline-First** (Add users & save movies without internet)
+- Real-time **Matches** page
+- Robust retry logic for weak connections
+- Smooth Hero animations, shimmer loading, and staggered list animations
 
-This project is a starting point for a Flutter application.
+## 📥 Download APK
+https://i.diawi.com/aN6LgM
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Tech Stack
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter + Riverpod (MVVM)
+- Hive (Local Database)
+- Dio
+- GoRouter + CachedNetworkImage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📁 Project Structure
+
+(See full structure in code)
+
+## 🗄 Local Database
+
+- **Users**: User details + `pendingSync` flag
+- **Movies**: TMDB movie data
+- **UserMovieSaves**
+
+## 🤖 AI Usage
+
+I used ChatGPT as a coding assistant to help generate boilerplate, fix bugs, and polish UI/UX.
+
+**Full AI Conversation:**  
+https://chatgpt.com/share/6a011833-8b78-8322-8acc-777162fb227b
+
+---
+
+### How to Use:
+
+1. Build APK:
+   ```bash
+   flutter build apk --release
