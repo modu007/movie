@@ -20,8 +20,13 @@ class MovieRepository {
         queryParameters: {
           'page': page,
           'language': 'en-US',
-          'api_key': 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NDE4ZDlhZGFiN2Q4MGJlZDliZWJhODExMjI0N2QyYiIsIm5iZiI6MTY0MzM1MjM1Ni44MTYsInN1YiI6IjYxZjM5MTI0NWY2YzQ5MDEwY2ZhODY0ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vJOHCOsa8P-hwh2JeF5mn2XTpKZqKoxCLO0NL4xjAwU',
         },
+        options: Options(
+          headers: {
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NDE4ZDlhZGFiN2Q4MGJlZDliZWJhODExMjI0N2QyYiIsIm5iZiI6MTY0MzM1MjM1Ni44MTYsInN1YiI6IjYxZjM5MTI0NWY2YzQ5MDEwY2ZhODY0ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vJOHCOsa8P-hwh2JeF5mn2XTpKZqKoxCLO0NL4xjAwU',
+            'accept': 'application/json',
+          },
+        ),
       );
 
       final List results = response.data['results'] ?? [];
